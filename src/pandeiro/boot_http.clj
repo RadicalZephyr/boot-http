@@ -13,15 +13,15 @@
 (def ssl-defaults {:port 3443 :keystore (str (clojure.java.io/resource "boot-http-keystore.jks")) :key-password "p@ssw0rd"})
 
 (def serve-deps
-  '[[ring/ring-core "1.4.0"]
-    [ring/ring-headers "0.2.0"]
-    [ring/ring-devel "1.4.0"]])
+  '[[ring/ring-core "1.6.3"]
+    [ring/ring-headers "0.3.0"]
+    [ring/ring-devel "1.6.3"]])
 
 (def jetty-dep
-  '[ring/ring-jetty-adapter "1.4.0"])
+  '[ring/ring-jetty-adapter "1.6.3"])
 
 (def httpkit-dep
-  '[http-kit "2.1.19"])
+  '[http-kit "2.2.0"])
 
 (defn nrepl-deps
   []
